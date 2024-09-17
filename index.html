@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Profile of Khorshed</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./side-nav.css">
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <link rel="stylesheet" href="floating-side-btn.css" />
+  <link rel="stylesheet" href="./fontawesome-5.15.4/css/all.css" />
+  <link rel="stylesheet" href="./fontawesome-6.6.0/css/all.css" />
+
+</head>
+
+<body>
+
+  <div class="float-container-index">
+    <a href="resume.html" target="_blank"> <i class="far fa-file-alt" aria-hidden="true"
+        style="font-size:30px;color:white;"></i> &nbsp; &nbsp;
+      Resume</a>
+    <a href="portfolio.html" target="_blank"> <i class="fa fa-user" aria-hidden="true"
+        style="font-size:30px;color:white;"></i> &nbsp; &nbsp;
+      Portfolio</a>
+    <a href="project.html" target="_blank"> <i class="fa fa-cogs" aria-hidden="true"
+        style="font-size:30px;color:white;"></i> &nbsp; &nbsp;
+      Projects </a>
+  </div>
+
+
+  <div class="container">
+    <div class="profile-box">
+      <span onclick="openNav()" class="menu-icon">&#9776;</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="./education.html" target="_blank">Resume</a>
+        <a href="portfolio.html" target="_blank">Portfolio</a>
+        <a href="project.html" target="_blank">Projects</a>
+      </div>
+      <!-- <img src="./images/menu.png" class="menu-icon"> -->
+
+      <a href="https://www.ius.edu.bd/" target="_blank" title="Univeristy of Scholars"><img src="./images/ius.png"
+          class="setting-icon"></a>
+      <img src="./images/profile-pic.jpg" class="profile-pic">
+      <h3>Md Khorshed Alam</h3>
+      <h2>BSc in CSE</h2>
+      <p>.Net Developer (C#)</p>
+      <div class="social-media">
+        <!-- <i class="fab fa-facebook-f" style="font-size:16px"></i>         -->
+        <img src="./images/facebook.png">
+        <img src="./images/dribble.png">
+        <img src="./images/telegram.png">
+        <img src="./images/instagram.png">
+      </div>
+      <button type="button"> Follow </button>
+      <div class="profile-bottom">
+        <p style="color: #9333ea;">Learn more about my profile ...</p>
+       <a href="home.html" target="_blank"> <img src="./images/arrow.png"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

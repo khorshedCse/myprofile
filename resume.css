@@ -1,0 +1,27 @@
+
+thead{
+    color: #000;   
+    text-align: left;  
+    font-weight: bold;
+    font-size: 16px;
+    /* background: linear-gradient(0deg, rgba(250,184,109,1) 5%, rgba(92,9,49,1) 50%, rgba(250,184,109,1) 95%);; */
+}
+table  {
+    width: 100%;
+}
+table,
+th, td {
+    border: 1px solid gray !important;    
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important; 
+    vertical-align: middle;  
+    padding: 1px;  
+    font-size: 14px;
+}
+table tr td{
+    font-size: 12px;
+}
+.custom-table{
+width: 70%;
+}
+

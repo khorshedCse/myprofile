@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume of Khorshed</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./side-nav.css">
+    <link rel="stylesheet" href="./resume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="printResume" class="profile-box-resume">
+        <div class="profile-box">
+            <input type="button" onclick="printDiv('printResume')" value="Print the Resume" />
+        </div>
+        <img src="./images/profile-pic.jpg" class="profile-pic-edu">
+        <h3>Resume</h3>
+        <h2>Md Khorshed Alam</h2>
+        <p>+8801744-327865</p>
+        <p>khorshed.cse.ius@gmail.com</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">
+                        Educational Information
+                    </th>
+                </tr>
+            </thead>
+
+            <tr>
+                <th style="width: 100px;">Exam Name</th>
+                <th>Board/Institution</th>
+                <th>Group</th>
+                <th>Year</th>
+                <th>Rersult</th>
+
+            </tr>
+            <tr>
+                <td>S.S.C</td>
+                <td>Baragobindapur A.M.B High School, Cumilla</td>
+                <td>Science</td>
+                <td>1998</td>
+                <td>First Division*</td>
+            </tr>
+            <tr>
+                <td>H.S.C</td>
+                <td>Cumilla Victoria Govt College, Cumilla</td>
+                <td>Science</td>
+                <td>2000</td>
+                <td>First Division</td>
+            </tr>
+            <tr>
+                <td>BSc in CSE</td>
+                <td> The International Univeristy of Scholars, Bangladesh</td>
+                <td>CSE</td>
+                <td>2025</td>
+                <td>3.30 out of 4.0</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+    <script>
+        function printDiv(divId) {
+            var printContents = document.getElementById(divId).innerHTML;
+            var originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+</body>
+
+</html>
