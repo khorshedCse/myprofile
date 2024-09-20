@@ -31,6 +31,14 @@
     </div>
   </nav>
 
+<!-- Back to top button -->
+<a id="button"></a>
+
+
+<!-- Some content to fill up the page -->
+<div class="content">
+  <h1>Back to Top Button</h1>
+  
   <section class="section">
     <div class="float-container">
       <a href="resume.html" target="_blank"> <i class="far fa-file-alt" aria-hidden="true"
@@ -132,6 +140,26 @@
       </div>
     </div>
     <!-- end personal info -->
-</body>
 
+
+</div>
+</body>
+<scripts>
+  var btn = $('#button');
+  
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+
+</scripts>
 </html>
