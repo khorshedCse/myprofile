@@ -253,38 +253,19 @@ function backToTop() {
 
 </script>
   <style>
-   /* #btn-back-to-top {
+  #btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
-}*/
-
-    #btn-back-to-top {
- 
+  display: none;  
   background-color: #FF9800;
   width: 50px;
   height: 50px;
   text-align: center;
   border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
 }
-#btn-back-to-top::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
+
+   
 #btn-back-to-top:hover {
   cursor: pointer;
   background-color: #333;
@@ -292,11 +273,7 @@ function backToTop() {
 #btn-back-to-top:active {
   background-color: #555;
 }
-#btn-back-to-top.show {
-  opacity: 1;
-  visibility: visible;
-}
-   
+ 
   </style>
 </body>
 
