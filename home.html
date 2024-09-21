@@ -192,13 +192,13 @@
       </div>
     </div>
     <!-- end personal info -->
-
+   </div>
 
 
 
 
 <!-- Back to top button -->
- <button class="action__btns portfolio" type="button" id="btn-back-to-top">  <i class="fas fa-arrow-up"></i></button>
+ <button  type="button" id="btn-back-to-top">  <i class="fas fa-arrow-up"></i></button>
 
 <!-- Explanation -->
 <div class="container mt-4 text-center">
@@ -215,7 +215,7 @@
   </p>
     
 </div>
-      </div>
+   
 
   </section>
 
@@ -250,7 +250,50 @@ function backToTop() {
 
 
 </script>
+  <style>
+    :root {
+  --home-color: #ff574a;
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+  #btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+    
+  display: none;  
+  gap: 1rem;
+    
+  width: 50px;
+  height: 50px;
+  text-align: center; 
 
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+ 
+#btn-back-to-top:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+#btn-back-to-top:active {
+   color: var(--primary-color);
+}
+ 
+  </style>
 </body>
 
 </html>
