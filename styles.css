@@ -105,6 +105,13 @@ ul li a:hover {
   gap: 4rem;
 }
 
+.section_container_Single_Column {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;  
+  gap: 4rem;
+}
 .content {
   display: flex;
   flex-direction: column;
