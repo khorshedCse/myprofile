@@ -3,7 +3,7 @@
 
 <head>
   <title>Profile of Khorshed</title>
-  
+
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./side-nav.css">
   <!-- <link rel="stylesheet" href="styles.css" /> -->
@@ -53,10 +53,10 @@
         <img src="./images/telegram.png">
         <img src="./images/instagram.png">
       </div>
-      <button type="button"> Follow </button>
+      <button type="button" id="btnFollow"> Follow </button>
       <div class="profile-bottom">
         <p style="color: #9333ea;">Learn more about my profile ...</p>
-       <a href="home.html" target="_blank"> <img src="./images/arrow.png"></a>
+        <a href="home.html" target="_blank"> <img src="./images/arrow.png"></a>
       </div>
     </div>
   </div>
@@ -70,6 +70,13 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+
+    let followMeButton = document.getElementById("btnFollow");
+    followMeButton.addEventListener("click", followMe);
+    function followMe() {
+      window.open('https://www.facebook.com/khorshed.alam.3914', '_blank');
+    }
+
   </script>
 </body>
 
