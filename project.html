@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
+  <title>Projects</title>
+  
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="material_button.css" />
   <link rel="stylesheet" href="floating-side-btn.css" />
   <link rel="stylesheet" href="fontawesome-5.15.4/css/all.css">
   <link rel="stylesheet" href="fontawesome-6.6.0/css/all.css">
-  <title>Projects</title>
+
 
   <style>
     
@@ -154,15 +157,16 @@ img {
   </section>
 
   <section class="section_container_Single_Column">
-    <div><i class="fa fa-cogs"></i> <h2> Projects Information</h2></div>
+    <div style="margin-top: 100px;"><i class="fa fa-cogs"></i> <h2> Projects Information</h2></div>
     <div class="row">
       <div class="column">
       <!-- card info -->
         <div class="card">
-          <img src="./images/vat.png" class="profile-pic" alt="Avatar" style="width:80%">  
+          <img src="./images/vat.png" class="profile-pic" alt="Avatar" style="width:80%;">  
           <div class="container">
             <h4><b>VAT MANAGEMENT</b></h4>
             <p>Vat for development...</p>
+            <button class="btn" type="button" id="btnVAT"> <i class="fa fa-share"></i>   More Details.. </button>
           </div>
          </div>
       <!-- end card info -->
@@ -175,6 +179,7 @@ img {
         <div class="container">
           <h4><b>VARSITY MANAGEMENT</b></h4>
           <p>Digitalize the education system...</p>
+          <button class="btn danger" type="button" id="btnVarsity"> <i class="fa fa-share"></i>   More Details.. </button>
         </div>
       </div>
     <!-- end card info -->
@@ -187,6 +192,7 @@ img {
         <div class="container">
           <h4><b>ACCOUNTING</b></h4>
           <p>To make business accounts easily...</p>
+          <button class="btn" type="button" id="btnAccounting"> <i class="fa fa-share"></i>   More Details.. </button>
         </div>
       </div>
       <!-- end card info -->
@@ -199,12 +205,20 @@ img {
           <div class="container">
             <h4><b>E-COMMERCE</b></h4>
             <p>Life make easy with happy shopping...</p>
+            <button class="btn" type="button" id="btnEcommerce"> <i class="fa fa-share"></i>   More Details.. </button>
           </div>
         </div>
       <!-- end card info -->
            </div>
       </div>
   </section>
+  <scripts>
+     let vatButton = document.getElementById("btnVAT");
+     vatButton.addEventListener("click", vatButton);
+    function vatButton() {
+      window.open('/vat.html/', '_blank');
+    }
+  </scripts>
 </body>
 
 </html>
